@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Pixyll</title>
+    <title>Khoa học</title>
     <description>A simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff.</description>
-    <link>http://pixyll.com/</link>
-    <atom:link href="http://pixyll.com/feed.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:4000/khoahoc/</link>
+    <atom:link href="http://localhost:4000/khoahoc/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
         <title>Guide to Forking Pixyll</title>
@@ -86,8 +86,8 @@ Permission is hereby granted, [...]
 &lt;/div&gt;
 </description>
         <pubDate>Sat, 26 Jan 2019 19:22:00 +0700</pubDate>
-        <link>http://pixyll.com/jekyll/pixyll/2019/01/26/guide-to-forking-pixyll/</link>
-        <guid isPermaLink="true">http://pixyll.com/jekyll/pixyll/2019/01/26/guide-to-forking-pixyll/</guid>
+        <link>http://localhost:4000/khoahoc/jekyll/pixyll/2019/01/26/guide-to-forking-pixyll/</link>
+        <guid isPermaLink="true">http://localhost:4000/khoahoc/jekyll/pixyll/2019/01/26/guide-to-forking-pixyll/</guid>
       </item>
     
       <item>
@@ -121,8 +121,8 @@ Bên trên chỉ là những địa điểm nổi bật trong rất nhiều khu 
 &lt;p&gt;Theo The Travel Magazine&lt;/p&gt;
 </description>
         <pubDate>Sat, 26 Jan 2019 00:00:00 +0700</pubDate>
-        <link>http://pixyll.com/jekyll/pixyll/2019/01/26/testing/</link>
-        <guid isPermaLink="true">http://pixyll.com/jekyll/pixyll/2019/01/26/testing/</guid>
+        <link>http://localhost:4000/khoahoc/jekyll/pixyll/2019/01/26/testing/</link>
+        <guid isPermaLink="true">http://localhost:4000/khoahoc/jekyll/pixyll/2019/01/26/testing/</guid>
       </item>
     
       <item>
@@ -139,8 +139,8 @@ Bên trên chỉ là những địa điểm nổi bật trong rất nhiều khu 
 &lt;/ul&gt;
 </description>
         <pubDate>Sat, 11 Jul 2015 00:00:00 +0700</pubDate>
-        <link>http://pixyll.com/jekyll/pixyll/2015/07/11/announcing-pixyll-version-2/</link>
-        <guid isPermaLink="true">http://pixyll.com/jekyll/pixyll/2015/07/11/announcing-pixyll-version-2/</guid>
+        <link>http://localhost:4000/khoahoc/jekyll/pixyll/2015/07/11/announcing-pixyll-version-2/</link>
+        <guid isPermaLink="true">http://localhost:4000/khoahoc/jekyll/pixyll/2015/07/11/announcing-pixyll-version-2/</guid>
       </item>
     
       <item>
@@ -165,8 +165,8 @@ Bên trên chỉ là những địa điểm nổi bật trong rất nhiều khu 
 &lt;p&gt;It’s free, and open source (&lt;a href=&quot;http://opensource.org/licenses/MIT&quot;&gt;MIT&lt;/a&gt;).&lt;/p&gt;
 </description>
         <pubDate>Wed, 11 Jun 2014 22:31:19 +0700</pubDate>
-        <link>http://pixyll.com/jekyll/pixyll/2014/06/11/welcome-to-pixyll/</link>
-        <guid isPermaLink="true">http://pixyll.com/jekyll/pixyll/2014/06/11/welcome-to-pixyll/</guid>
+        <link>http://localhost:4000/khoahoc/jekyll/pixyll/2014/06/11/welcome-to-pixyll/</link>
+        <guid isPermaLink="true">http://localhost:4000/khoahoc/jekyll/pixyll/2014/06/11/welcome-to-pixyll/</guid>
       </item>
     
       <item>
@@ -409,8 +409,8 @@ or add, features.&lt;/p&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Tue, 10 Jun 2014 19:31:19 +0700</pubDate>
-        <link>http://pixyll.com/jekyll/pixyll/2014/06/10/see-pixyll-in-action/</link>
-        <guid isPermaLink="true">http://pixyll.com/jekyll/pixyll/2014/06/10/see-pixyll-in-action/</guid>
+        <link>http://localhost:4000/khoahoc/jekyll/pixyll/2014/06/10/see-pixyll-in-action/</link>
+        <guid isPermaLink="true">http://localhost:4000/khoahoc/jekyll/pixyll/2014/06/10/see-pixyll-in-action/</guid>
       </item>
     
       <item>
@@ -426,8 +426,8 @@ and &lt;a href=&quot;http://en.wikipedia.org/wiki/Textile_(markup_language)&quot
 &lt;p&gt;Learn more about Jekyll on their &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;website&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Mon, 09 Jun 2014 19:32:18 +0700</pubDate>
-        <link>http://pixyll.com/jekyll/pixyll/2014/06/09/so-what-is-jekyll/</link>
-        <guid isPermaLink="true">http://pixyll.com/jekyll/pixyll/2014/06/09/so-what-is-jekyll/</guid>
+        <link>http://localhost:4000/khoahoc/jekyll/pixyll/2014/06/09/so-what-is-jekyll/</link>
+        <guid isPermaLink="true">http://localhost:4000/khoahoc/jekyll/pixyll/2014/06/09/so-what-is-jekyll/</guid>
       </item>
     
       <item>
@@ -459,8 +459,8 @@ Bên trên chỉ là những địa điểm nổi bật trong rất nhiều khu 
 &lt;p&gt;Duy An&lt;/p&gt;
 </description>
         <pubDate>Mon, 09 Jun 2014 19:32:18 +0700</pubDate>
-        <link>http://pixyll.com/jekyll/pixyll/2014/06/09/so-what-is-jekyll-new/</link>
-        <guid isPermaLink="true">http://pixyll.com/jekyll/pixyll/2014/06/09/so-what-is-jekyll-new/</guid>
+        <link>http://localhost:4000/khoahoc/jekyll/pixyll/2014/06/09/so-what-is-jekyll-new/</link>
+        <guid isPermaLink="true">http://localhost:4000/khoahoc/jekyll/pixyll/2014/06/09/so-what-is-jekyll-new/</guid>
       </item>
     
       <item>
@@ -468,8 +468,8 @@ Bên trên chỉ là những địa điểm nổi bật trong rất nhiều khu 
         <description>&lt;p&gt;This is an empty post to illustrate the pagination component with Pixyll.&lt;/p&gt;
 </description>
         <pubDate>Sun, 08 Jun 2014 18:21:29 +0700</pubDate>
-        <link>http://pixyll.com/jekyll/pixyll/2014/06/08/pixyll-has-pagination/</link>
-        <guid isPermaLink="true">http://pixyll.com/jekyll/pixyll/2014/06/08/pixyll-has-pagination/</guid>
+        <link>http://localhost:4000/khoahoc/jekyll/pixyll/2014/06/08/pixyll-has-pagination/</link>
+        <guid isPermaLink="true">http://localhost:4000/khoahoc/jekyll/pixyll/2014/06/08/pixyll-has-pagination/</guid>
       </item>
     
   </channel>
