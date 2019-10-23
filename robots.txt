@@ -1,1 +1,1 @@
-Sitemap: http://localhost:4000/khoahoc/sitemap.xml
+Sitemap: https://buida.github.io/khoahoc//khoahoc/sitemap.xml
