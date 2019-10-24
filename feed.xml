@@ -3,10 +3,10 @@
   <channel>
     <title>Khoa hoc</title>
     <description>Long Form Jekyll theme built with SASS / COMPASS / SUSY</description>
-    <link>/</link>
-    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 24 Oct 2019 12:48:41 +0700</pubDate>
-    <lastBuildDate>Thu, 24 Oct 2019 12:48:41 +0700</lastBuildDate>
+    <link>https://buida.github.io/khoahoc//</link>
+    <atom:link href="https://buida.github.io/khoahoc//feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 24 Oct 2019 12:56:20 +0700</pubDate>
+    <lastBuildDate>Thu, 24 Oct 2019 12:56:20 +0700</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       
@@ -28,8 +28,8 @@
 </description>
         
         <pubDate>Thu, 24 Oct 2019 00:00:00 +0700</pubDate>
-        <link>/blog/fisrt-commit/</link>
-        <guid isPermaLink="true">/blog/fisrt-commit/</guid>
+        <link>https://buida.github.io/khoahoc//blog/fisrt-commit/</link>
+        <guid isPermaLink="true">https://buida.github.io/khoahoc//blog/fisrt-commit/</guid>
         
         
       </item>
