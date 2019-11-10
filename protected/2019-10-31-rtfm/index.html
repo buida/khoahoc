@@ -9,12 +9,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <title>Protected Pages</title>
+    <title>Red Team Field Manual</title>
 
     <!-- Open Graph Meta -->
     <meta content="Khoa học" property="og:site_name">
     
-      <meta content="Protected Pages" property="og:title">
+      <meta content="Red Team Field Manual" property="og:title">
     
     
       <meta content="article" property="og:type">
@@ -23,7 +23,7 @@
       <meta content="Những bài viết/dịch có giá trị từ những tạp chí khoa học đầu ngành." property="og:description">
     
     
-      <meta content="https://buida.github.io/khoahoc//protectedpage/" property="og:url">
+      <meta content="https://buida.github.io/khoahoc//protected/2019-10-31-rtfm/" property="og:url">
     
     
     
@@ -40,7 +40,7 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="/khoahoc/assets/css/style.css">
     <!--[if IE 8]><link rel="stylesheet" href="/khoahoc/assets/css/ie.css"><![endif]-->
-    <link rel="canonical" href="https://buida.github.io/khoahoc//khoahoc/protectedpage/">
+    <link rel="canonical" href="https://buida.github.io/khoahoc//khoahoc/protected/2019-10-31-rtfm/">
 
     <!-- Modernizr -->
     <script src="/khoahoc/assets/js/modernizr.custom.15390.js" type="text/javascript"></script>
@@ -84,7 +84,7 @@ ga('send', 'pageview');
                      <a href="/khoahoc/search">Tìm kiếm</a>
                  </li>
                  
-                 <li class="element  current last">
+                 <li class="element   last">
                      <a href="/khoahoc/protectedpage">Bài viết bảo mật</a>
                  </li>
                  
@@ -96,20 +96,50 @@ ga('send', 'pageview');
 
    <div class="content">
       <div class="container">
-         <h2>Bài viết bảo mật</h2>
+         Red Team Field Manual
 
-<li><a href="/khoahoc/protected/2019-10-31-history-of-beds/">Lịch sử lạ kỳ của chiếc giường</a></li>
+<div id="content">
+  Nhập mật khẩu
+  <input id="password" type="password">
+  <button onclick="decrypt()">Mở khóa</button>
+  <p id="errmsg" style="color: red;"></p>
+</div>
 
-<li><a href="/khoahoc/protected/2019-10-31-how-many-kisses/">Hôn chào nhau bao nhiêu cái là đủ?</a></li>
 
-<li><a href="/khoahoc/protected/2019-10-31-rtfm/">Red Team Field Manual</a></li>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.min.js" integrity="sha256-u6BamZiW5tCemje2nrteKC2KoLIKX9lKPSpvCkOhamw=" crossorigin="anonymous"></script>
+<script>
+  function decrypt() {
+    var protectedContent = "XZ6nK+esbP503hz87YMr6g==|U8f/labI3sIIGl3CfyaVLbgpyIS4siUbBLct+UrgDeo=|LCCnYR9/gsQa0h/d3w/tGd0piq9pHJULjISFC7ACCIjfz/Kkd5VBC/WyJU3sz6KYFIW7ttuwrL25O4BEHzYqNf+H2bCzKphScGMKVDd+pPyNc/agOZdIYbf3AxT8wNvm0k2WInBAqBu/vOdR+YXHbyUM2s5bH9VSV8le1TbENG9SnQ4P/dTiJfNzFAOZoDoUYonmIuA88JtKEuaKOmkfmPmSe9XhY7O/IHZQ4h5s75xshaCcrMx/Qt+Q0Wjn0Jpqs4apqsWbgGwQJ6FiJvjCk0RTSqB+qbKlaQtn26HjHMlatzb1ZG/kcbGWnIKNmktm";
+    var password = document.getElementById('password').value;
 
-<li><a href="/khoahoc/protected/2019-11-08-travel-in-nov/">Đi đâu trong tháng 11?</a></li>
+    var payload = protectedContent.split("|");
+    var iv = payload[0];
+    var hmac = payload[1];
+    var cipherText = payload[2];
 
-<li><a href="/khoahoc/protected/2019-11-09-sleep-on-trip/">Ngủ ngon khi đi du lịch</a></li>
+    var passphraseDgst = CryptoJS.SHA256(password).toString();
+    var decryptedhmac = CryptoJS.HmacSHA256(cipherText, CryptoJS.enc.Hex.parse(passphraseDgst)).toString().trim();
+    if(CryptoJS.enc.Base64.parse(hmac).toString() === decryptedhmac){
+      var decrypted = CryptoJS.AES.decrypt(
+        {ciphertext:CryptoJS.enc.Base64.parse(cipherText)},
+        CryptoJS.enc.Hex.parse(passphraseDgst),
+        {iv:CryptoJS.enc.Base64.parse(iv)}
+      );
+      var content = CryptoJS.enc.Utf8.stringify(decrypted);
+      document.getElementById('content').innerHTML = content;
+    } else {
+      document.getElementById('errmsg').innerHTML = "Sai mật khẩu, vui lòng gõ lại.";
+    }
+  }
 
-<li><a href="/khoahoc/protected/2019-11-10-old-people-new-music/">Tại sao người lớn không thích nhạc trẻ?</a></li>
-
+  var passwordInput = document.getElementById('password');
+  passwordInput.addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode === 13) {
+      decrypt();
+    }
+  })
+</script>
 
       </div>
    </div><!-- end .content -->
