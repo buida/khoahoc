@@ -73,6 +73,14 @@ ga('send', 'pageview');
                  </li>
                  
                  <li class="element   ">
+                     <a href="/khoahoc/protectedpage">Bài viết bảo mật</a>
+                 </li>
+                 
+                 <li class="element   ">
+                     <a href="/khoahoc/reading">Đọc</a>
+                 </li>
+                 
+                 <li class="element   ">
                      <a href="/khoahoc/about">Về chúng tôi</a>
                  </li>
                  
@@ -80,12 +88,8 @@ ga('send', 'pageview');
                      <a href="/khoahoc/contact">Liên hệ</a>
                  </li>
                  
-                 <li class="element   ">
-                     <a href="/khoahoc/search">Tìm kiếm</a>
-                 </li>
-                 
                  <li class="element   last">
-                     <a href="/khoahoc/protectedpage">Bài viết bảo mật</a>
+                     <a href="/khoahoc/search">Tìm kiếm</a>
                  </li>
                  
              </ul>
@@ -109,7 +113,7 @@ ga('send', 'pageview');
 <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.min.js" integrity="sha256-u6BamZiW5tCemje2nrteKC2KoLIKX9lKPSpvCkOhamw=" crossorigin="anonymous"></script>
 <script>
   function decrypt() {
-    var protectedContent = "XZ6nK+esbP503hz87YMr6g==|U8f/labI3sIIGl3CfyaVLbgpyIS4siUbBLct+UrgDeo=|LCCnYR9/gsQa0h/d3w/tGd0piq9pHJULjISFC7ACCIjfz/Kkd5VBC/WyJU3sz6KYFIW7ttuwrL25O4BEHzYqNf+H2bCzKphScGMKVDd+pPyNc/agOZdIYbf3AxT8wNvm0k2WInBAqBu/vOdR+YXHbyUM2s5bH9VSV8le1TbENG9SnQ4P/dTiJfNzFAOZoDoUYonmIuA88JtKEuaKOmkfmPmSe9XhY7O/IHZQ4h5s75xshaCcrMx/Qt+Q0Wjn0Jpqs4apqsWbgGwQJ6FiJvjCk0RTSqB+qbKlaQtn26HjHMlatzb1ZG/kcbGWnIKNmktm";
+    var protectedContent = "olKwOqzny12f/vJJ07/5vQ==|hbVCaTDjU6t+stTqdT9IqOP/zjh5Gmr3dZJPIkFl/Ck=|8VEkWlGsafGC3wPGjF9nFIdPjl2TJ8+MTwUO9VJfYwILPndR4hu5e7yFH76aE9PyFxhk/DJkq6oIcMvJofwX+iN2tCopBwLy6RKRayB2KQtFAAPPnkVI7vFPcMz+Qy1e9/gnro1QTFeXbvfJUIayL9w2myWlQJUaVAzqtXYrlK+793ShuIp1x/KUNuT2RJKgxtje6O6DyuZjrL2HtJ0UUsV6xc0zlSloyH2KpE0kPcrDNEBL4PCcayAqGZ6ZGqq5TFWBs5KovGjfRqwvxFGhkFi012Fk351m1+RwXmJUpJgcQ+Wyl4UAdZFyyYo3gTnB";
     var password = document.getElementById('password').value;
 
     var payload = protectedContent.split("|");
